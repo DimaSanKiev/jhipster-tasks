@@ -1,9 +1,9 @@
-import { ComponentFixture, TestBed, async } from '@angular/core/testing';
-import { Observable } from 'rxjs/Observable';
+import {ComponentFixture, TestBed, async} from '@angular/core/testing';
+import {Observable} from 'rxjs/Observable';
 
-import { TasksTestModule } from '../../../test.module';
-import { Principal, AccountService } from '../../../../../../main/webapp/app/shared';
-import { SettingsComponent } from '../../../../../../main/webapp/app/account/settings/settings.component';
+import {TasksTestModule} from '../../../test.module';
+import {Principal, AccountService} from '../../../../../../main/webapp/app/shared';
+import {SettingsComponent} from '../../../../../../main/webapp/app/account/settings/settings.component';
 
 describe('Component Tests', () => {
 
@@ -18,11 +18,10 @@ describe('Component Tests', () => {
             TestBed.configureTestingModule({
                 imports: [TasksTestModule],
                 declarations: [SettingsComponent],
-                providers: [
-                ]
+                providers: []
             })
-            .overrideTemplate(SettingsComponent, '')
-            .compileComponents();
+                .overrideTemplate(SettingsComponent, '')
+                .compileComponents();
         }));
 
         beforeEach(() => {

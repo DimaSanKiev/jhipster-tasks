@@ -187,7 +187,7 @@ public class WebConfigurer implements ServletContextInitializer, EmbeddedServlet
             h2ConsoleServlet.setInitParameter("-properties", "src/main/resources/");
             h2ConsoleServlet.setLoadOnStartup(1);
 
-        } catch (ClassNotFoundException | LinkageError  e) {
+        } catch (ClassNotFoundException | LinkageError e) {
             throw new RuntimeException("Failed to load and initialize org.h2.server.web.WebServlet", e);
 
         } catch (IllegalAccessException | InstantiationException e) {

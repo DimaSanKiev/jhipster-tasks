@@ -1,7 +1,7 @@
-import { JhiAlertService } from 'ng-jhipster';
-import { HttpInterceptor, HttpRequest, HttpResponse, HttpHandler, HttpEvent } from '@angular/common/http';
-import { Injector } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
+import {JhiAlertService} from 'ng-jhipster';
+import {HttpInterceptor, HttpRequest, HttpResponse, HttpHandler, HttpEvent} from '@angular/common/http';
+import {Injector} from '@angular/core';
+import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/do';
 
 export class NotificationInterceptor implements HttpInterceptor {
@@ -31,6 +31,7 @@ export class NotificationInterceptor implements HttpInterceptor {
                     }
                 }
             }
-        }, (err: any) => {});
+        }, (err: any) => {
+        });
     }
 }

@@ -1,6 +1,7 @@
 package guru.springframework.web.rest.vm;
 
 import guru.springframework.service.dto.UserDTO;
+
 import javax.validation.constraints.Size;
 
 /**

@@ -1,8 +1,8 @@
-import { ComponentFixture, TestBed, async } from '@angular/core/testing';
+import {ComponentFixture, TestBed, async} from '@angular/core/testing';
 
-import { TasksTestModule } from '../../../test.module';
-import { JhiHealthCheckComponent } from '../../../../../../main/webapp/app/admin/health/health.component';
-import { JhiHealthService } from '../../../../../../main/webapp/app/admin/health/health.service';
+import {TasksTestModule} from '../../../test.module';
+import {JhiHealthCheckComponent} from '../../../../../../main/webapp/app/admin/health/health.component';
+import {JhiHealthService} from '../../../../../../main/webapp/app/admin/health/health.service';
 
 describe('Component Tests', () => {
 
@@ -20,8 +20,8 @@ describe('Component Tests', () => {
                     JhiHealthService
                 ]
             })
-            .overrideTemplate(JhiHealthCheckComponent, '')
-            .compileComponents();
+                .overrideTemplate(JhiHealthCheckComponent, '')
+                .compileComponents();
         }));
 
         beforeEach(() => {
