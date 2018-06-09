@@ -38,6 +38,7 @@ public class CacheConfiguration {
             cm.createCache(guru.springframework.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(guru.springframework.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(guru.springframework.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(guru.springframework.domain.Task.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
